@@ -1,8 +1,9 @@
 {
   "name": "@jimpick/use-filecoin-network-info",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React hook to query network info via Filecoin API",
   "main": "dist/useFilecoinNetworkInfo.js",
+  "module": "./useFilecoinNetworkInfo.js",
   "type": "module",
   "scripts": {
     "build": "babel *.js --out-dir ./dist",
