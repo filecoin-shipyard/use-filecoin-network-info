@@ -1,6 +1,6 @@
 {
   "name": "@jimpick/use-filecoin-network-info",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React hook to query network info via Filecoin API",
   "main": "dist/useFilecoinNetworkInfo.js",
   "module": "./useFilecoinNetworkInfo.js",
@@ -30,7 +30,7 @@
     "type": "git",
     "url": "git+https://github.com/jimpick/use-filecoin-network-info.git"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@jimpick/use-filecoin-config": "^0.0.6",
     "filecoin-api-client": "^0.3.0",
     "react": "^16.8.6"
