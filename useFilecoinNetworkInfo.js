@@ -37,7 +37,7 @@ export default function useFilecoinNetworkInfo ({
           const response = await fetch(`${api}/show/block/${cidString}`)
           const block = await response.json()
           headBlocks[cid.toString()] = block
-          newHeight = block.height
+          newHeight = Number(block.Header.height)
         }
         setHeadBlocks(headBlocks)
         if (newHeight !== state.height) {
