@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import fetch from 'node-fetch'
-import useFilecoinConfig from '@jimpick/use-filecoin-config'
+import useFilecoinConfig from '@filecoin-shipyard/use-filecoin-config'
 
 export default function useFilecoinNetworkInfo ({
   interval = 1000
