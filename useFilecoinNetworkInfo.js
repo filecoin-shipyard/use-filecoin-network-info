@@ -23,8 +23,8 @@ export default function useFilecoinNetworkInfo ({
           api = 'http://user.kittyhawk.wtf:8000/api'
         } else if (netName === 'devnet-nightly') {
           api = 'https://explorer.nightly.kittyhawk.wtf/api'
-        } else if (netName === 'devnet-text') {
-          api = 'https://explorer.test.kittyhawk.wtf/api'
+        } else if (netName === 'devnet-staging') {
+          api = 'https://explorer.staging.kittyhawk.wtf/api'
         }
         if (!api) return
 
