@@ -6,12 +6,15 @@ export default function useFilecoinNetworkInfo ({
   interval = 1000
 }) {
   const [error, setError] = useState()
-  const [, netName] = useFilecoinConfig('net')
+  const [, configNetName] = useFilecoinConfig('net')
+  const [netName, setNetName] = useState()
   const [headBlocks, setHeadBlocks] = useState()
   const [height, setHeight] = useState()
   const [updateTime, setUpdateTime] = useState()
 
   useEffect(() => {
+    const netName = configNetName ? configNetName : 'devnet-user'
+    setNetName(netName)
     const state = {
       timeoutId: null,
       height
@@ -58,7 +61,7 @@ export default function useFilecoinNetworkInfo ({
     }
     doWork().then(schedule)
     return () => clearTimeout(state.timeoutId)
-  }, [netName])
+  }, [configNetName])
 
   return [error, netName, headBlocks, height, updateTime]
 }
