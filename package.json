@@ -1,6 +1,6 @@
 {
   "name": "@filecoin-shipyard/use-filecoin-network-info",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "React hook to query network info via Filecoin API",
   "main": "dist/useFilecoinNetworkInfo.js",
   "module": "./useFilecoinNetworkInfo.js",
@@ -31,7 +31,7 @@
     "url": "git+https://github.com/filecoin-shipyard/use-filecoin-network-info.git"
   },
   "peerDependencies": {
-    "@filecoin-shipyard/use-filecoin-config": "^0.0.10",
+    "@filecoin-shipyard/use-filecoin-config": "^0.0.11",
     "filecoin-api-client": "^0.5.1",
     "react": "^16.8.6"
   }
